@@ -1,0 +1,919 @@
+EESchema Schematic File Version 4
+LIBS:Millikan-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:DIODE D?
+U 1 1 5D5565E7
+P 6050 1300
+F 0 "D?" H 6050 1565 50  0000 C CNN
+F 1 "DIODE" H 6050 1474 50  0000 C CNN
+F 2 "" H 6050 1300 50  0001 C CNN
+F 3 "~" H 6050 1300 50  0001 C CNN
+	1    6050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5D556C50
+P 6450 1300
+F 0 "D?" H 6450 1565 50  0000 C CNN
+F 1 "DIODE" H 6450 1474 50  0000 C CNN
+F 2 "" H 6450 1300 50  0001 C CNN
+F 3 "~" H 6450 1300 50  0001 C CNN
+	1    6450 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5D557464
+P 5850 1500
+F 0 "D?" V 5896 1372 50  0000 R CNN
+F 1 "DIODE" V 5805 1372 50  0000 R CNN
+F 2 "" H 5850 1500 50  0001 C CNN
+F 3 "~" H 5850 1500 50  0001 C CNN
+	1    5850 1500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5850 1300
+$Comp
+L pspice:DIODE D?
+U 1 1 5D557B62
+P 5850 1900
+F 0 "D?" V 5896 1772 50  0000 R CNN
+F 1 "DIODE" V 5805 1772 50  0000 R CNN
+F 2 "" H 5850 1900 50  0001 C CNN
+F 3 "~" H 5850 1900 50  0001 C CNN
+	1    5850 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5D55893F
+P 6050 2100
+F 0 "D?" H 6050 2365 50  0000 C CNN
+F 1 "DIODE" H 6050 2274 50  0000 C CNN
+F 2 "" H 6050 2100 50  0001 C CNN
+F 3 "~" H 6050 2100 50  0001 C CNN
+	1    6050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5D559190
+P 6450 2100
+F 0 "D?" H 6450 2365 50  0000 C CNN
+F 1 "DIODE" H 6450 2274 50  0000 C CNN
+F 2 "" H 6450 2100 50  0001 C CNN
+F 3 "~" H 6450 2100 50  0001 C CNN
+	1    6450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5D5595F0
+P 6650 1500
+F 0 "D?" V 6696 1372 50  0000 R CNN
+F 1 "DIODE" V 6605 1372 50  0000 R CNN
+F 2 "" H 6650 1500 50  0001 C CNN
+F 3 "~" H 6650 1500 50  0001 C CNN
+	1    6650 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5D55A203
+P 6650 1900
+F 0 "D?" V 6696 1772 50  0000 R CNN
+F 1 "DIODE" V 6605 1772 50  0000 R CNN
+F 2 "" H 6650 1900 50  0001 C CNN
+F 3 "~" H 6650 1900 50  0001 C CNN
+	1    6650 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 2100 5850 2450
+Connection ~ 5850 2100
+Wire Wire Line
+	6650 1300 6900 1300
+Wire Wire Line
+	6900 1300 6900 2450
+Connection ~ 6650 1300
+$Comp
+L power:+12V #PWR?
+U 1 1 5D5694D2
+P 750 950
+F 0 "#PWR?" H 750 800 50  0001 C CNN
+F 1 "+12V" H 765 1123 50  0000 C CNN
+F 2 "" H 750 950 50  0001 C CNN
+F 3 "" H 750 950 50  0001 C CNN
+	1    750  950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1117-5.0 U?
+U 1 1 5D569C69
+P 4600 1150
+F 0 "U?" H 4600 1392 50  0000 C CNN
+F 1 "LM1117-5.0" H 4600 1301 50  0000 C CNN
+F 2 "" H 4600 1150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 4600 1150 50  0001 C CNN
+	1    4600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K?
+U 1 1 5D56C127
+P 1950 1150
+F 0 "K?" V 1383 1150 50  0000 C CNN
+F 1 "DIPxx-1Axx-11x" V 1474 1150 50  0000 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 2300 1100 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 1950 1150 50  0001 C CNN
+	1    1950 1150
+	0    1    1    0   
+$EndComp
+Text GLabel 5150 1150 2    50   Input ~ 0
+5V
+Text GLabel 2250 1350 2    50   Input ~ 0
+zumWandler
+$Comp
+L Device:R R?
+U 1 1 5D5840D3
+P 1500 950
+F 0 "R?" V 1293 950 50  0000 C CNN
+F 1 "R" V 1384 950 50  0000 C CNN
+F 2 "" V 1430 950 50  0001 C CNN
+F 3 "~" H 1500 950 50  0001 C CNN
+	1    1500 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 950  750  950 
+Wire Wire Line
+	1650 1350 1350 1350
+Wire Wire Line
+	1350 1350 1350 950 
+Connection ~ 1350 950 
+$Comp
+L Transistor_BJT:2SC1941 Q?
+U 1 1 5D585922
+P 3050 1050
+F 0 "Q?" V 3378 1050 50  0000 C CNN
+F 1 "2SC1941" V 3287 1050 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3250 975 50  0001 L CIN
+F 3 "http://rtellason.com/transdata/2sc1941.pdf" H 3050 1050 50  0001 L CNN
+	1    3050 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 950  2850 950 
+$Comp
+L power:GND #PWR?
+U 1 1 5D5888A8
+P 3250 1300
+F 0 "#PWR?" H 3250 1050 50  0001 C CNN
+F 1 "GND" H 3255 1127 50  0000 C CNN
+F 2 "" H 3250 1300 50  0001 C CNN
+F 3 "" H 3250 1300 50  0001 C CNN
+	1    3250 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 950  3250 1300
+$Comp
+L Device:R R?
+U 1 1 5D589AF3
+P 3050 1400
+F 0 "R?" H 2900 1500 50  0000 L CNN
+F 1 "R" H 2950 1400 50  0000 L CNN
+F 2 "" V 2980 1400 50  0001 C CNN
+F 3 "~" H 3050 1400 50  0001 C CNN
+	1    3050 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3050 1550 0    50   Input ~ 0
+AnAusSignal
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5D58B3DA
+P 1100 2300
+F 0 "J?" H 1018 1975 50  0000 C CNN
+F 1 "zu ESP Board" H 1018 2066 50  0000 C CNN
+F 2 "" H 1100 2300 50  0001 C CNN
+F 3 "~" H 1100 2300 50  0001 C CNN
+	1    1100 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D58C59D
+P 1300 2300
+F 0 "#PWR?" H 1300 2050 50  0001 C CNN
+F 1 "GND" V 1305 2172 50  0000 R CNN
+F 2 "" H 1300 2300 50  0001 C CNN
+F 3 "" H 1300 2300 50  0001 C CNN
+	1    1300 2300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1300 2200 2    50   Input ~ 0
+5V
+Text GLabel 1300 2400 2    50   Input ~ 0
+AnAusSignal
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D58D934
+P 2100 2300
+F 0 "J?" H 2018 1975 50  0000 C CNN
+F 1 "Input von Netzteil" H 2018 2066 50  0000 C CNN
+F 2 "" H 2100 2300 50  0001 C CNN
+F 3 "~" H 2100 2300 50  0001 C CNN
+	1    2100 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D58E34D
+P 2300 2300
+F 0 "#PWR?" H 2300 2050 50  0001 C CNN
+F 1 "GND" V 2305 2172 50  0000 R CNN
+F 2 "" H 2300 2300 50  0001 C CNN
+F 3 "" H 2300 2300 50  0001 C CNN
+	1    2300 2300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2300 2200 2    50   Input ~ 0
+12V
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D58ED95
+P 2800 2300
+F 0 "J?" H 2718 1975 50  0000 C CNN
+F 1 "zum Wandler" H 2718 2066 50  0000 C CNN
+F 2 "" H 2800 2300 50  0001 C CNN
+F 3 "~" H 2800 2300 50  0001 C CNN
+	1    2800 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D58F530
+P 3000 2300
+F 0 "#PWR?" H 3000 2050 50  0001 C CNN
+F 1 "GND" V 3005 2172 50  0000 R CNN
+F 2 "" H 3000 2300 50  0001 C CNN
+F 3 "" H 3000 2300 50  0001 C CNN
+	1    3000 2300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3000 2200 2    50   Input ~ 0
+zumWandler
+Text GLabel 1150 950  1    50   Input ~ 0
+12V
+$Comp
+L power:AC #PWR?
+U 1 1 5D590511
+P 5850 1000
+F 0 "#PWR?" H 5850 900 50  0001 C CNN
+F 1 "AC" H 5850 1275 50  0000 C CNN
+F 2 "" H 5850 1000 50  0001 C CNN
+F 3 "" H 5850 1000 50  0001 C CNN
+	1    5850 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1300 5850 1000
+$Comp
+L power:AC #PWR?
+U 1 1 5D591C14
+P 7200 2100
+F 0 "#PWR?" H 7200 2000 50  0001 C CNN
+F 1 "AC" H 7200 2375 50  0000 C CNN
+F 2 "" H 7200 2100 50  0001 C CNN
+F 3 "" H 7200 2100 50  0001 C CNN
+	1    7200 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2100 7200 2100
+Connection ~ 6650 2100
+$Comp
+L Device:C C?
+U 1 1 5D5545B0
+P 6350 2450
+F 0 "C?" V 6098 2450 50  0000 C CNN
+F 1 "C" V 6189 2450 50  0000 C CNN
+F 2 "" H 6388 2300 50  0001 C CNN
+F 3 "~" H 6350 2450 50  0001 C CNN
+	1    6350 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D555302
+P 5500 3100
+F 0 "J?" H 5650 2750 50  0000 L CNN
+F 1 "von Gleichrichter zu H Brücke" H 5450 2850 50  0000 L CNN
+F 2 "" H 5500 3100 50  0001 C CNN
+F 3 "~" H 5500 3100 50  0001 C CNN
+	1    5500 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 2450 6500 2450
+Wire Wire Line
+	6200 2450 5850 2450
+$Comp
+L power:GND #PWR?
+U 1 1 5D5977FC
+P 5850 2450
+F 0 "#PWR?" H 5850 2200 50  0001 C CNN
+F 1 "GND" H 5855 2277 50  0000 C CNN
+F 2 "" H 5850 2450 50  0001 C CNN
+F 3 "" H 5850 2450 50  0001 C CNN
+	1    5850 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 2450
+Text GLabel 6650 2450 3    50   Input ~ 0
+1,7kV-DC
+$Comp
+L power:GND #PWR?
+U 1 1 5D59A284
+P 5700 3100
+F 0 "#PWR?" H 5700 2850 50  0001 C CNN
+F 1 "GND" V 5705 2972 50  0000 R CNN
+F 2 "" H 5700 3100 50  0001 C CNN
+F 3 "" H 5700 3100 50  0001 C CNN
+	1    5700 3100
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5700 3000 2    50   Input ~ 0
+1,7kV-DC-fürHBrücke
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D59C2F0
+P 6950 3100
+F 0 "J?" H 6868 2775 50  0000 C CNN
+F 1 "1,2kV von Wandler" H 6868 2866 50  0000 C CNN
+F 2 "" H 6950 3100 50  0001 C CNN
+F 3 "~" H 6950 3100 50  0001 C CNN
+	1    6950 3100
+	-1   0    0    1   
+$EndComp
+Text GLabel 7150 3000 2    50   Input ~ 0
+1,2kV-AC
+Text GLabel 7150 3100 2    50   Input ~ 0
+1,2kV-AC
+$Comp
+L power:+12V #PWR?
+U 1 1 5D5AABF7
+P 4300 850
+F 0 "#PWR?" H 4300 700 50  0001 C CNN
+F 1 "+12V" H 4315 1023 50  0000 C CNN
+F 2 "" H 4300 850 50  0001 C CNN
+F 3 "" H 4300 850 50  0001 C CNN
+	1    4300 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D5AEDB3
+P 4300 1550
+F 0 "C?" H 4415 1596 50  0000 L CNN
+F 1 "10uF" H 4415 1505 50  0000 L CNN
+F 2 "" H 4338 1400 50  0001 C CNN
+F 3 "~" H 4300 1550 50  0001 C CNN
+	1    4300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 850  4300 1150
+Connection ~ 4300 1150
+Wire Wire Line
+	4300 1150 4300 1400
+Wire Wire Line
+	4600 1450 4600 1700
+Wire Wire Line
+	4600 1700 4400 1700
+$Comp
+L power:GND #PWR?
+U 1 1 5D5B04B9
+P 4400 1700
+F 0 "#PWR?" H 4400 1450 50  0001 C CNN
+F 1 "GND" H 4405 1527 50  0000 C CNN
+F 2 "" H 4400 1700 50  0001 C CNN
+F 3 "" H 4400 1700 50  0001 C CNN
+	1    4400 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4400 1700
+Wire Wire Line
+	4400 1700 4300 1700
+$Comp
+L Device:C C?
+U 1 1 5D5B0C7C
+P 5000 1550
+F 0 "C?" H 5115 1596 50  0000 L CNN
+F 1 "100uF" H 5115 1505 50  0000 L CNN
+F 2 "" H 5038 1400 50  0001 C CNN
+F 3 "~" H 5000 1550 50  0001 C CNN
+	1    5000 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1150 5000 1150
+Wire Wire Line
+	5000 1400 5000 1150
+Connection ~ 5000 1150
+Wire Wire Line
+	5000 1150 4900 1150
+Wire Wire Line
+	5000 1700 4600 1700
+Connection ~ 4600 1700
+$Comp
+L power:+12V #PWR?
+U 1 1 5D5B369A
+P 1550 3500
+F 0 "#PWR?" H 1550 3350 50  0001 C CNN
+F 1 "+12V" H 1565 3673 50  0000 C CNN
+F 2 "" H 1550 3500 50  0001 C CNN
+F 3 "" H 1550 3500 50  0001 C CNN
+	1    1550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5B4065
+P 1550 3650
+F 0 "R?" H 1620 3696 50  0000 L CNN
+F 1 "R" H 1620 3605 50  0000 L CNN
+F 2 "" V 1480 3650 50  0001 C CNN
+F 3 "~" H 1550 3650 50  0001 C CNN
+	1    1550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K?
+U 1 1 5D5B4827
+P 1750 4100
+F 0 "K?" H 2080 4146 50  0000 L CNN
+F 1 "DIPxx-1Axx-11x" H 2080 4055 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 2100 4050 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 1750 4100 50  0001 C CNN
+	1    1750 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 5D5B7BA5
+P 1450 4600
+F 0 "Q?" H 1640 4646 50  0000 L CNN
+F 1 "2N2219" H 1640 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 1650 4525 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 1450 4600 50  0001 L CNN
+	1    1450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D5B95E7
+P 1550 4800
+F 0 "#PWR?" H 1550 4550 50  0001 C CNN
+F 1 "GND" H 1555 4627 50  0000 C CNN
+F 2 "" H 1550 4800 50  0001 C CNN
+F 3 "" H 1550 4800 50  0001 C CNN
+	1    1550 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5BBEF9
+P 1100 4600
+F 0 "R?" V 893 4600 50  0000 C CNN
+F 1 "2k2" V 984 4600 50  0000 C CNN
+F 2 "" V 1030 4600 50  0001 C CNN
+F 3 "~" H 1100 4600 50  0001 C CNN
+	1    1100 4600
+	0    1    1    0   
+$EndComp
+Text GLabel 950  4600 0    50   Input ~ 0
+H1
+Text GLabel 1950 3800 1    50   Input ~ 0
+1,7kV
+$Comp
+L power:+12V #PWR?
+U 1 1 5D5C6FB5
+P 1550 5350
+F 0 "#PWR?" H 1550 5200 50  0001 C CNN
+F 1 "+12V" H 1565 5523 50  0000 C CNN
+F 2 "" H 1550 5350 50  0001 C CNN
+F 3 "" H 1550 5350 50  0001 C CNN
+	1    1550 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5C6FBB
+P 1550 5500
+F 0 "R?" H 1620 5546 50  0000 L CNN
+F 1 "R" H 1620 5455 50  0000 L CNN
+F 2 "" V 1480 5500 50  0001 C CNN
+F 3 "~" H 1550 5500 50  0001 C CNN
+	1    1550 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K?
+U 1 1 5D5C6FC1
+P 1750 5950
+F 0 "K?" H 2080 5996 50  0000 L CNN
+F 1 "DIPxx-1Axx-11x" H 2080 5905 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 2100 5900 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 1750 5950 50  0001 C CNN
+	1    1750 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 5D5C6FC7
+P 1450 6450
+F 0 "Q?" H 1640 6496 50  0000 L CNN
+F 1 "2N2219" H 1640 6405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 1650 6375 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 1450 6450 50  0001 L CNN
+	1    1450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D5C6FCD
+P 1550 6650
+F 0 "#PWR?" H 1550 6400 50  0001 C CNN
+F 1 "GND" H 1555 6477 50  0000 C CNN
+F 2 "" H 1550 6650 50  0001 C CNN
+F 3 "" H 1550 6650 50  0001 C CNN
+	1    1550 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5C6FD3
+P 1100 6450
+F 0 "R?" V 893 6450 50  0000 C CNN
+F 1 "2k2" V 984 6450 50  0000 C CNN
+F 2 "" V 1030 6450 50  0001 C CNN
+F 3 "~" H 1100 6450 50  0001 C CNN
+	1    1100 6450
+	0    1    1    0   
+$EndComp
+Text GLabel 950  6450 0    50   Input ~ 0
+H2
+Wire Wire Line
+	1950 4400 1950 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5D5CC65A
+P 1950 6250
+F 0 "#PWR?" H 1950 6000 50  0001 C CNN
+F 1 "GND" H 1955 6077 50  0000 C CNN
+F 2 "" H 1950 6250 50  0001 C CNN
+F 3 "" H 1950 6250 50  0001 C CNN
+	1    1950 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5050 2600 5050
+Connection ~ 1950 5050
+Wire Wire Line
+	1950 5050 1950 5650
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D5CE99C
+P 2800 4850
+F 0 "J?" V 2764 4662 50  0000 R CNN
+F 1 "Millikan Kondensator" V 2673 4662 50  0000 R CNN
+F 2 "" H 2800 4850 50  0001 C CNN
+F 3 "~" H 2800 4850 50  0001 C CNN
+	1    2800 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5D5E3AC9
+P 4650 3500
+F 0 "#PWR?" H 4650 3350 50  0001 C CNN
+F 1 "+12V" H 4665 3673 50  0000 C CNN
+F 2 "" H 4650 3500 50  0001 C CNN
+F 3 "" H 4650 3500 50  0001 C CNN
+	1    4650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5E3ACF
+P 4650 3650
+F 0 "R?" H 4720 3696 50  0000 L CNN
+F 1 "R" H 4720 3605 50  0000 L CNN
+F 2 "" V 4580 3650 50  0001 C CNN
+F 3 "~" H 4650 3650 50  0001 C CNN
+	1    4650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K?
+U 1 1 5D5E3AD5
+P 4850 4100
+F 0 "K?" H 5180 4146 50  0000 L CNN
+F 1 "DIPxx-1Axx-11x" H 5180 4055 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 5200 4050 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 4850 4100 50  0001 C CNN
+	1    4850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 5D5E3ADB
+P 4550 4600
+F 0 "Q?" H 4740 4646 50  0000 L CNN
+F 1 "2N2219" H 4740 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 4750 4525 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 4550 4600 50  0001 L CNN
+	1    4550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D5E3AE1
+P 4650 4800
+F 0 "#PWR?" H 4650 4550 50  0001 C CNN
+F 1 "GND" H 4655 4627 50  0000 C CNN
+F 2 "" H 4650 4800 50  0001 C CNN
+F 3 "" H 4650 4800 50  0001 C CNN
+	1    4650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5E3AE7
+P 4200 4600
+F 0 "R?" V 3993 4600 50  0000 C CNN
+F 1 "2k2" V 4084 4600 50  0000 C CNN
+F 2 "" V 4130 4600 50  0001 C CNN
+F 3 "~" H 4200 4600 50  0001 C CNN
+	1    4200 4600
+	0    1    1    0   
+$EndComp
+Text GLabel 5050 3800 1    50   Input ~ 0
+1,7kV
+$Comp
+L power:+12V #PWR?
+U 1 1 5D5E3AEF
+P 4650 5350
+F 0 "#PWR?" H 4650 5200 50  0001 C CNN
+F 1 "+12V" H 4665 5523 50  0000 C CNN
+F 2 "" H 4650 5350 50  0001 C CNN
+F 3 "" H 4650 5350 50  0001 C CNN
+	1    4650 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5E3AF5
+P 4650 5500
+F 0 "R?" H 4720 5546 50  0000 L CNN
+F 1 "R" H 4720 5455 50  0000 L CNN
+F 2 "" V 4580 5500 50  0001 C CNN
+F 3 "~" H 4650 5500 50  0001 C CNN
+	1    4650 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K?
+U 1 1 5D5E3AFB
+P 4850 5950
+F 0 "K?" H 5180 5996 50  0000 L CNN
+F 1 "DIPxx-1Axx-11x" H 5180 5905 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 5200 5900 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 4850 5950 50  0001 C CNN
+	1    4850 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 5D5E3B01
+P 4550 6450
+F 0 "Q?" H 4740 6496 50  0000 L CNN
+F 1 "2N2219" H 4740 6405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 4750 6375 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 4550 6450 50  0001 L CNN
+	1    4550 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D5E3B07
+P 4650 6650
+F 0 "#PWR?" H 4650 6400 50  0001 C CNN
+F 1 "GND" H 4655 6477 50  0000 C CNN
+F 2 "" H 4650 6650 50  0001 C CNN
+F 3 "" H 4650 6650 50  0001 C CNN
+	1    4650 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5E3B0D
+P 4200 6450
+F 0 "R?" V 3993 6450 50  0000 C CNN
+F 1 "2k2" V 4084 6450 50  0000 C CNN
+F 2 "" V 4130 6450 50  0001 C CNN
+F 3 "~" H 4200 6450 50  0001 C CNN
+	1    4200 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D5E3B15
+P 5050 6250
+F 0 "#PWR?" H 5050 6000 50  0001 C CNN
+F 1 "GND" H 5055 6077 50  0000 C CNN
+F 2 "" H 5050 6250 50  0001 C CNN
+F 3 "" H 5050 6250 50  0001 C CNN
+	1    5050 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4400 5050 5050
+Wire Wire Line
+	2900 5050 3650 5050
+Connection ~ 5050 5050
+Wire Wire Line
+	5050 5050 5050 5650
+Text GLabel 4050 4600 0    50   Input ~ 0
+H3
+Text GLabel 4050 6450 0    50   Input ~ 0
+H4
+$Comp
+L power:+12V #PWR?
+U 1 1 5D5EEE06
+P 2550 6900
+F 0 "#PWR?" H 2550 6750 50  0001 C CNN
+F 1 "+12V" H 2565 7073 50  0000 C CNN
+F 2 "" H 2550 6900 50  0001 C CNN
+F 3 "" H 2550 6900 50  0001 C CNN
+	1    2550 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5EEE0C
+P 2700 6900
+F 0 "R?" H 2770 6946 50  0000 L CNN
+F 1 "R" H 2770 6855 50  0000 L CNN
+F 2 "" V 2630 6900 50  0001 C CNN
+F 3 "~" H 2700 6900 50  0001 C CNN
+	1    2700 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K?
+U 1 1 5D5EEE12
+P 3150 6700
+F 0 "K?" H 3480 6746 50  0000 L CNN
+F 1 "DIPxx-1Axx-11x" H 3480 6655 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3500 6650 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3150 6700 50  0001 C CNN
+	1    3150 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 5D5EEE18
+P 3650 7000
+F 0 "Q?" H 3840 7046 50  0000 L CNN
+F 1 "2N2219" H 3840 6955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 3850 6925 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 3650 7000 50  0001 L CNN
+	1    3650 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D5EEE1E
+P 3850 6900
+F 0 "#PWR?" H 3850 6650 50  0001 C CNN
+F 1 "GND" H 3855 6727 50  0000 C CNN
+F 2 "" H 3850 6900 50  0001 C CNN
+F 3 "" H 3850 6900 50  0001 C CNN
+	1    3850 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5EEE24
+P 3650 7350
+F 0 "R?" V 3443 7350 50  0000 C CNN
+F 1 "2k2" V 3534 7350 50  0000 C CNN
+F 2 "" V 3580 7350 50  0001 C CNN
+F 3 "~" H 3650 7350 50  0001 C CNN
+	1    3650 7350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 7500 3    50   Input ~ 0
+S1
+Wire Wire Line
+	2850 6500 2600 6500
+Wire Wire Line
+	2600 6500 2600 5050
+Connection ~ 2600 5050
+Wire Wire Line
+	2600 5050 2800 5050
+Wire Wire Line
+	3450 6500 3650 6500
+Wire Wire Line
+	3650 6500 3650 5050
+Connection ~ 3650 5050
+Wire Wire Line
+	3650 5050 5050 5050
+Text GLabel 3200 3700 2    50   Input ~ 0
+H1
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 5D5F2557
+P 3000 3900
+F 0 "J?" H 2918 3475 50  0000 C CNN
+F 1 "Steuersignale von ESP" H 2918 3566 50  0000 C CNN
+F 2 "" H 3000 3900 50  0001 C CNN
+F 3 "~" H 3000 3900 50  0001 C CNN
+	1    3000 3900
+	-1   0    0    1   
+$EndComp
+Text GLabel 3200 3800 2    50   Input ~ 0
+H2
+Text GLabel 3200 3900 2    50   Input ~ 0
+H3
+Text GLabel 3200 4000 2    50   Input ~ 0
+H4
+Text GLabel 3200 4100 2    50   Input ~ 0
+S1
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D5F5636
+P 3800 3800
+F 0 "J?" H 3718 3475 50  0000 C CNN
+F 1 "HochSpannung" H 3718 3566 50  0000 C CNN
+F 2 "" H 3800 3800 50  0001 C CNN
+F 3 "~" H 3800 3800 50  0001 C CNN
+	1    3800 3800
+	-1   0    0    1   
+$EndComp
+Text GLabel 4000 3700 2    50   Input ~ 0
+1,7kV
+$Comp
+L power:GND #PWR?
+U 1 1 5D5F7DF5
+P 4000 3800
+F 0 "#PWR?" H 4000 3550 50  0001 C CNN
+F 1 "GND" V 4005 3672 50  0000 R CNN
+F 2 "" H 4000 3800 50  0001 C CNN
+F 3 "" H 4000 3800 50  0001 C CNN
+	1    4000 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5D5F8F34
+P 3800 4200
+F 0 "J?" H 3718 3975 50  0000 C CNN
+F 1 "12V" H 3718 4066 50  0000 C CNN
+F 2 "" H 3800 4200 50  0001 C CNN
+F 3 "~" H 3800 4200 50  0001 C CNN
+	1    3800 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5D5F99E2
+P 4100 4200
+F 0 "#PWR?" H 4100 4050 50  0001 C CNN
+F 1 "+12V" H 4115 4373 50  0000 C CNN
+F 2 "" H 4100 4200 50  0001 C CNN
+F 3 "" H 4100 4200 50  0001 C CNN
+	1    4100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4200 4000 4200
+$EndSCHEMATC
